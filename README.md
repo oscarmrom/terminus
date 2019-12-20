@@ -18,7 +18,7 @@ Here we’re mounting `${HOME}/.terminus:/tmp/.terminus` so that we can cache ou
 
 ```
 terminus(){
-  docker run -it --rm --volume ${HOME}/.terminus:/tmp/.terminus --entrypoint=terminus subhaze/terminus "${@}"
+  docker run -it --rm --volume ${HOME}/.terminus:/tmp/.terminus --entrypoint=terminus oscarmrom/terminus "${@}"
 }
 ```
 
